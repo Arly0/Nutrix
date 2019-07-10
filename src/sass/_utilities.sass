@@ -1,0 +1,101 @@
+[hidden]
+    display: none
+
+$transition-duration: .25s
+$transition-delay: 0s
+
+@mixin transition
+    transition: all $transition-duration ease-in-out $transition-delay
+
+@mixin transition-in
+    transition: all $transition-duration ease-in $transition-delay
+
+@mixin transition-out
+    transition: all $transition-duration ease-out $transition-delay
+
+@mixin transition-prop($property, $another-duration: $transition-duration)
+    transition: $property $another-duration ease-in-out $transition-delay
+
+@mixin transition-duration($another-duration)
+    transition: all $another-duration ease-in-out $transition-delay
+
+.clearfix:after
+    content: ''
+    display: table
+    clear: both
+
+@mixin clearfix
+    &:after
+        content: ''
+        display: table
+        clear: both
+
+@mixin media_max($media)
+    @media screen and (max-width: $media)
+        @content
+
+@mixin media_min($media)
+    @media screen and (min-width: $media)
+        @content
+
+@mixin media_max_height($media)
+    @media screen and (max-height: $media)
+        @content
+
+@mixin media_min_height($media)
+    @media screen and (min-height: $media)
+        @content
+
+
+@mixin smallText
+    font-size: 13px;
+    line-height: 16px;
+
+@mixin defaultText
+    font-size: 14px
+    line-height: 24px 
+
+@mixin bigText 
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+
+@mixin superTitle
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+@mixin titleText
+    width: 100%
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+
+@mixin scale
+    transform: scale(1.1)
+    transition: .2s
+
+@mixin button
+    background-color: $dGreen
+    color: #fff
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 20px
+    border: none
+    font-weight: 600
+
+
+
+// vars
+$dark: #404040;
+$dGreen: #31ADA5;
+$hoverLink: #3CCDC4;    
+$dWhite: #E5E5E5;
+$dym: #727777;
+$placeholder: #959595;
+$bold : Avenir Next Cyr Bold;
+$wDark: #DFE9E8;
+$lGreen: #3CCDC4;

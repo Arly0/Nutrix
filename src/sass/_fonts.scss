@@ -1,0 +1,22 @@
+// Fonts
+$f_OSregular: 'OpenSansRegular', sans-serif;
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans/OpenSansRegular/OpenSans.eot');
+    src: url('../fonts/OpenSans/OpenSansRegular/OpenSans.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans/OpenSansRegular/OpenSans.woff2') format('woff2'),
+    url('../fonts/OpenSans/OpenSansRegular/OpenSans.woff') format('woff'),
+    url('../fonts/OpenSans/OpenSansRegular/OpenSans.ttf') format('truetype'),
+    url('../fonts/OpenSans/OpenSansRegular/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Avenir Next Cyr';
+    src: url('../fonts/AvenirNextCyr-Regular.ttf');
+}
+@font-face{
+    font-family: 'Avenir Next Cyr Bold';
+    src: url('../fonts/AvenirNextCyr-Bold.ttf');
+}

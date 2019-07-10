@@ -1,0 +1,3743 @@
+/* const */
+.show_fullDesk
+    display: block
+.show_smallDesk
+    display: none
+.deletespace
+    padding-right: 0px
+    padding-left: 0px
+.d-grid
+    display: grid;
+.line__full
+    width: 100%
+    margin-top: 20px
+.form__star_rate:hover
+    cursor: pointer
+.header__menu
+        ul li:first-child
+            display: none !important
+        .showtel
+            font-weight: 600
+body
+    font-family: Avenir Next Cyr
+.star-active
+    path
+        fill: $dGreen
+.star-disable
+    path
+        fill: #DFE9E8
+.hidden
+    display: none !important
+.center
+    width: 100%
+    text-align: center
+.transition
+    transition: .2s
+    &:hover
+        @include scale
+.showDesk
+    display: block !important           
+.showMob
+    display: none !important
+.showtel
+    display: none
+i
+    font-style: italic
+#header2
+    border-bottom: 1px solid #DFE9E8
+/* header section */
+.header
+    hr
+        background: #DFE9E8;
+        margin: 20px 0 16px 0
+// header nav
+.header__nav, .header__menu
+    .col-lg-12
+        padding-left: 0px
+        padding-right: 0px
+.header__nav
+    background-color: #F2F4F3;
+    width: 100%;
+    margin-bottom: 20px
+    .nav__block
+        justify-content: space-between;
+    ul
+        margin: 12px 0;
+.nav__item
+    margin-right: 30px
+    transition: .2s
+    &:hover
+        @include scale
+    
+.nav__item,.nav__sign a
+    @include smallText
+    
+.nav__account
+    margin: 12px 0;
+    div:first-child
+        margin-right: 10px;
+
+    
+// header main
+.header__main
+    position: sticky
+    top: 0
+    width: 100%
+    left: 0
+    padding: 5px 0 !important
+    z-index: 9
+    transition: 0.2s
+    background-color: #fff
+    padding: 25px 0
+
+.main__logo
+    width: 100%
+    img
+        width: auto
+        height: 50px
+
+.main__search    
+    height: 100%
+    position: relative
+    input
+        width: 100%
+        height: 40px
+        padding: 12px 40px 12px 16px
+        border: 1px solid #DFE9E8
+        box-sizing: border-box
+        border-radius: 3px
+        @include smallText
+        margin-top: auto
+        margin-bottom: auto
+    img
+        width: 16px
+        height: 100%
+        line-height: 16px
+        text-align: center
+        margin-left: -26px
+        position: relative
+        z-index: 1
+        float: right
+        
+.main__dropDown
+    position: absolute
+    top: 40px
+    width: 100%
+    background-color: #fff
+    border: 1px solid #DFE9E8;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgba(64, 64, 64, 0.05);
+.main__DD-list
+    width: 100%
+    div:last-child
+        padding-bottom: 30px
+
+.main__DD-item
+    width: 100%
+    justify-content: space-between
+    // margin-left: 10px
+    padding: 11px 40px
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #fff
+    color: $dark
+    &:hover
+        background-color: #F2F4F3
+        cursor: pointer
+
+.main__DD-name
+    min-width: 76%
+    margin-left: 20px
+.main__DD-price
+    font-weight: 600   
+
+.main__contact
+    height: 100%
+
+.main__links
+    margin-right: 20px
+    margin-top: auto
+    margin-bottom: auto
+.main__links,.main__tel,.main__mail
+    display: block
+.main__tel
+    font-weight: 600
+    @include bigText
+    color: $dGreen
+    
+    &:hover
+        color: $dGreen
+.main__mail
+    @include smallText
+    font-size: 14px
+    line-height: 17px
+    color: #dark
+    &:hover
+        color: $dGreen
+
+.main__cart
+    position: relative
+.shop__quant
+    position: absolute
+    right: -4px
+    top: -4px
+    font-family: Avenir Next Cyr;
+    font-size: 11px;
+    line-height: 13px;
+    color: #fff;
+    padding: 1px 4px
+    background-color: #31ADA5
+    border-radius: 50%
+
+.main__icons
+    margin-top: auto
+    margin-bottom: auto
+    div
+        margin-left: 20px
+        width: 36px
+        height: 36px
+    img
+        width: 32px
+        height: 32px
+        transition: .2s
+        &:hover
+            width: 36px
+            height: 36px
+            transition: .2s
+            cursor: pointer
+
+// header menu
+.header__menu
+    background-color: #fff;
+
+    ul
+        justify-content: space-between
+        padding: 0 0 16px 0
+.menu__item
+    font-size: 14px
+    line-height: 17px
+    text-transform: uppercase 
+    color: #000
+    transition: 0.3s
+    &:hover
+        transition: 0.3s
+        cursor: pointer
+        color: $dGreen
+        svg
+            path
+                stroke: $dGreen
+    svg
+        margin-left: 6px
+        width: 16px
+        height: 16px
+        fill: none
+        path
+            stroke: $dark
+
+
+.menu__block
+    z-index: 2
+    position: absolute
+    top: 0
+    background: #FFFFFF;
+    border: 1px solid #DFE9E8;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgba(64, 64, 64, 0.05);
+    width: 100%
+    margin: 0 auto
+    height: auto
+    margin-left: calc((100% - 1110px) / 2)
+    grid-template-columns: repeat(5, 1fr)
+    padding: 30px 40px
+.menu__subtitle
+    font-size: 14px
+    line-height: 17px
+    text-transform: uppercase
+    color: $dGreen
+.DD_menu__item
+    font-size: 13px;
+    line-height: 28px;
+    color: $dark
+    a:hover
+        color: $dGreen
+        transition: .2s
+        
+
+// slider section
+.slider
+    padding: 0 0 50px 0
+    width: 100%
+    height: 700px
+    background-image: url('../images/bg.jpg')
+    background-repeat: no-repeat
+    background-position: top 0% center
+    background-size: 100% auto
+.slider__title
+    @include superTitle
+    font-family: $bold
+    padding-top: 130px
+.slider__desc
+    @include bigText
+    line-height: 24px
+    text-transform: none
+    margin-top: 16px
+    color: $dark
+    font-weight: 600
+.slider__more-link
+    @include defaultText
+    margin-top: 56px
+    width: max-content
+    display: block
+    padding: 13px 50px
+    background-color: $dGreen
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &:hover
+        background-color: $hoverLink
+        color: #fff
+    &:disabled
+        background-color: $dark
+        color: #fff
+.slider__nav
+    margin-top: 100px
+
+
+.slider__ellipse
+    width: 10px
+    height: 10px
+    background-color: $dark
+    border-radius: 50%
+    margin-right: 16px
+    &:hover
+        cursor: pointer
+        color: $dGreen
+
+.slider__elipse-active
+    background-color: $dGreen
+
+
+// best section
+.best
+    .slick-dots
+        display: none
+.best
+    background-color: #fff
+    padding: 30px 0 60px 0
+
+.best__recomend
+    margin-bottom: 50px
+    padding: 0
+    grid-template-columns: repeat(3, 1fr)
+
+
+.best__block
+    margin-right: 20px
+    padding: 32px 15px
+    background: linear-gradient(79.71deg, #31ADA5 0%, #71CC98 99.99%, #F2F4F3 100%);
+    p
+        @include bigText
+        margin: auto 0
+        font-size: 12px
+        line-height: 18px
+        margin-left: 16px
+        color: #ffffff
+        font-family: $bold
+
+    div
+        width: max-content;
+        margin: 0 auto;
+
+.best__title
+    @include titleText
+    margin-bottom: 50px
+
+.best__product
+    grid-template-columns: repeat(4, 1fr)
+.product__link
+    width: 270px
+.product
+    position: relative
+    background-color: #fff
+    padding: 26px 16px
+    width: 100%
+    &:hover
+        cursor: pointer
+        .product__title
+            color: $dGreen
+
+    .product__desc,.product__favorite,.product__discount,.product__name
+        display: none
+    .product__top
+        display: block
+    &:hover
+        outline: none
+        background-color: #fff
+        z-index: 10
+        box-shadow: 0px 0px 50px rgba(64, 64, 64, 0.15)
+        .product__desc,.product__favorite,.product__discount,.product__name
+            display: block
+        .product__top
+            display: none
+        .hidden
+            display: block
+
+.slick-multiple-items
+    z-index: 1
+
+.slick__nav
+    position: absolute
+    top: 16em 
+    width: 120%
+    justify-content: space-between
+    margin-left: -10%
+    z-index: 0
+    div:last-child
+        transform: rotate(-180deg)
+    .svg-container
+        width: 64px
+        height: 64px
+        path
+            stroke: $dark   
+        &:hover 
+            cursor: pointer
+            path
+                stroke: $dGreen
+.product__img
+    width: 100%
+    img
+        width: auto !important
+        margin: 33px auto 27px auto
+        height: auto
+    .pict
+        width: 215px
+        height: 230px
+        margin: auto auto
+.product__title
+    min-height: 80px
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark
+    padding: 26px 4px 8px 4px
+.product__desc
+    padding: 0 4px
+.product__item
+    color: $dark
+    @include smallText
+    line-height: 24px;
+    span
+        color: $dym
+.product__rait
+    padding: 0px 0px 5px 2px
+.product__buy
+    margin-top: 10px
+    justify-content: space-between
+    width: 100%
+.product__price
+
+    span
+        @include defaultText
+        text-decoration-line: line-through
+        color: $dym
+    p
+        font-size: 22px
+        line-height: 24px
+        font-family: $bold
+        color: $dark
+.product__btn
+    button
+        padding: 12px 20px
+        @include bigText
+        font-size: 14px
+        color: #fff
+        background-color: $dGreen
+        border: none
+        &:hover
+            background-color: $hoverLink
+        &:disabled
+            background-color: $dark
+
+.product__favorite
+    position: absolute
+    top: 26px
+    right: 16px
+    svg path
+        fill: $dark
+        transition: .1s
+    svg:hover
+        cursor: pointer
+        fill: $dGreen
+        transition: .1s
+        path
+            fill: $dGreen
+            transition: .1s
+
+
+.product__discount
+    position: absolute
+    top: 26px
+    left: 16px
+    p
+        background-color: #EB3E67
+        padding: 6px 12px
+        @include smallText
+        line-height: 1
+        color: #fff
+.product__name
+    position: absolute
+    top: 57px
+    left: 16px
+    p
+        background-color: #F2F4F3
+        padding: 6px 12px
+        @include smallText
+        line-height: 1
+        color: $dym
+.product__top
+    position: absolute
+    top: 26px
+    left: 16px
+    p
+        background-color: #F59C33;
+        color: #fff
+        padding: 6px 12px
+        @include smallText
+        line-height: 1
+
+// complex section
+.complex
+    background-color: #fff
+    padding: 0px 0 100px 0
+    color: $dark
+
+.complex__title
+    @include titleText
+    margin-bottom: 50px
+
+.complex__list
+    grid-template-columns: repeat(3, 1fr)
+    grid-column-gap: 30px
+
+.complex__first
+    .complex__block
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/complex_1.jpg);
+
+.complex__second
+    .complex__block
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/complex_2.jpg);
+
+.complex__third
+    .complex__block
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/complex_3.jpg);
+    .complex__div-text
+        padding-left: 8%;
+        padding-right: 8%;
+.complex__first,.complex__second, .complex__third
+    overflow: hidden
+.complex__block
+    z-index: 0
+    position: relative
+    width: 100%
+    height: 240px
+    background-repeat: no-repeat !important
+    background-size: 100% auto !important
+    background-position: center !important;
+    transition: .4s
+    &:hover
+        // transition: background-size .4s ease-in;
+        cursor: pointer
+        // background-size: 115% auto !important
+        transform: scale(1.2)
+.complex__div-text
+    width: 100%
+    padding: 30% 13% 0 13%
+    p
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #ffffff
+        font-family: $bold
+
+        &:first-child
+            float: left
+        &:nth-child(2)
+            float: right
+.complex__greenBack
+    width: 225px
+    background-color: $dGreen
+    height: 25px
+    position: absolute
+    top: 60%
+    right: 0
+    z-index: -1
+.complex__desc
+    background-color: #fff
+    border: 1px solid #DFE9E8
+    box-sizing: border-box
+    z-index: 2
+    position: relative
+.complex__list
+    width: 100%
+    margin: 10px auto 20px 20px
+.comples__item
+    @include defaultText
+    transition: .2s
+    &:hover
+        color: $dGreen
+        cursor: pointer
+        transition: .2s
+    &:before
+        content: "— "
+
+// subscribe section
+.subscribe
+    background-color: #F2F4F3
+    padding: 50px 0 65px 0
+    .col-lg-4 div
+        width: 100%
+        height: auto
+.subscribe__text
+    font-weight: 600
+    @include bigText
+    text-transform: none
+    width: 100%
+.subscribe__field
+    width: 72%
+    padding: 16px 20px 16px 20px
+    font-size: 16px;
+    line-height: 18px;
+    color: $dark
+    height: 52px
+.subscribe__field::placeholder  /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $placeholder
+
+.subscribe__field:-ms-input-placeholder /* Internet Explorer 10-11 */
+  color: $placeholder
+
+.subscribe__field::-ms-input-placeholder  /* Microsoft Edge */
+  color: $placeholder
+.subscribe__sbm
+    padding: 17px 41px
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 18px
+    letter-spacing: 0.05em
+    color: #fff
+    background-color: $dGreen
+    transition: .2s
+    &:hover
+        background-color: $hoverLink
+    &:disabled
+        background-color: $dark
+// company section
+.company
+    background: linear-gradient(67.66deg, #31ADA5 0%, #71CC98 99.99%, #F2F4F3 100%);
+    padding: 60px 0
+    .slick__nav
+        top: 10%
+
+    .svg-container:hover
+        path
+            stroke: #fff
+
+.company__item
+    width: 180px
+    margin-right: 60px
+    
+.company__list
+    width: 100%
+    height: auto
+    div:last-child
+        margin-right: 0px
+
+// news section
+.news
+    padding: 80px 0 75px 0
+    background-color: #fff
+
+.news__title
+    @include titleText
+    margin-bottom: 50px
+
+.news__content
+    grid-template-columns: repeat(2, 1fr)
+    grid-column-gap: 30px
+.news__item
+    width: 100%
+    height: auto
+    a
+        width: 100%
+        height: 100%
+        display: block
+        overflow: hidden
+
+.news__first
+    .news__pict
+        background: url(../images/news.jpg), #C4C4C4
+        background-repeat: no-repeat
+       
+.news__second
+    .news__pict
+        background: url(../images/news2.jpg), #C4C4C4
+
+.news__pict
+    width: 100%
+    height: 350px
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: auto 100% !important
+    background-repeat: no-repeat !important
+    background-position: center !important
+    transition: .4s
+    &:hover
+        transition: .4s
+        cursor: pointer
+        transform: scale(1.2)
+    
+.news__conent-title
+    width: 100%
+    margin-top: 30px
+    padding: 0 50px
+    @include bigText
+    text-transform: none
+    color: $dark
+    font-weight: 300
+    text-align: center
+    margin-bottom: 7px
+    &:hover
+        cursor: pointer
+        color: $dGreen
+.news__desc
+    width: 100%
+    @include defaultText
+    color: $dark
+    padding: 0 20px
+    text-align: center
+    &:hover
+        cursor: pointer
+        color: $dGreen
+.news__btn
+    padding: 8px 30px
+    font-size: 12px
+    line-height: 24px
+    letter-spacing: 0.1em
+    font-weight: 600
+    text-transform: uppercase
+    color: $dGreen
+    border: 1px solid $dGreen
+    background-color: #fff
+    margin-top: 22px
+    &:hover
+        background-color: $dGreen
+        color: #fff
+    &:disabled
+        background-color: $dark
+.news__line
+    width: 100%
+    background: #DFE9E8;
+    height: 1px
+    margin: 100px 0 50px 0
+.news__text
+    @include defaultText
+    color: $dym
+    width: 100%
+    height: auto
+
+// footer section
+.footer
+    background-color: $dark
+    padding: 70px 0 50px 0
+.footer__logo
+    width: 100%
+    height: auto
+.footer__sub
+    margin: 20px 0 15px 0
+    p
+        font-size: 14px
+        line-height: 18px
+        color: #CBCBCB
+.footer__email
+    background: #525252;
+    color: #fff
+    width: calc(100% - 40px)
+    height: 40px
+    padding: 11px 0 11px 20px
+    font-size: 14px
+    line-height: 18px
+
+.footer__email::placeholder  /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $placeholder
+
+.footer__email:-ms-input-placeholder /* Internet Explorer 10-11 */
+  color: $placeholder
+
+.footer__email::-ms-input-placeholder  /* Microsoft Edge */
+  color: $placeholder
+
+.footer__sbm
+    border: none
+    background: $dGreen
+    &:hover
+        background-color: $hoverLink
+    &:disabled
+        background-color: $dark
+    .footer__arrow
+        transform: rotate(-90deg)
+        stroke: #fff
+
+.footer__menu
+    grid-template-columns: repeat(2, 1fr)
+
+.footer__category,.footer__info
+    width: 100%
+    margin-top: 7px
+.footer__subtitle
+    font-size: 16px
+    line-height: 18px
+    text-transform: uppercase
+    color: #fff
+    margin-bottom: 11px
+.footer__item
+    @include defaultText
+    line-height: 30px
+    color: #CBCBCB
+    &:hover
+        color: $dGreen
+.footer__info
+    margin-left: 20px
+
+.footer__contacts
+    width: 100%
+    margin-top: 1px
+    color: #fff
+    line-height: 30px
+.footer__phone
+    font-size: 18px
+    &:hover
+        color: $dGreen
+.footer__companyMail
+    font-size: 16px
+    &:hover
+        color: $dGreen
+.footer__adress
+    line-height: 20px
+    margin-top: 5px
+    margin-bottom: 5px
+.footer__graph
+    color: #CBCBCB
+    font-size: 14px
+.footer__social
+    margin-top: 10px
+.footer__icon
+    width: auto
+    height: auto
+    margin-right: 15px
+    img
+        width: 24px
+        height: 24px
+
+.underfooter
+    background: #363636;
+    width: 100%
+    height: 50px
+    color: #fff
+    font-size: 12px
+    line-height: 24px
+    div
+        height: 100%
+    .d-flex
+        justify-content: space-between
+.footer__copypast,.footer__bleecker
+    height: auto !important
+    margin: auto 0
+    img 
+        margin-left: 3px
+
+
+
+// location
+.location
+    position: absolute
+    top: 20px
+    z-index: 2
+    .d-flex
+        flex-wrap: wrap
+.location__item
+    @include smallText
+.location__main
+    color: $dym
+.location__here
+    color: $dark
+.location__arrow
+    margin: 3px 10px 0 10px
+    transform: rotate(-90deg)
+    width: 12px
+    height: 12px
+
+    
+/*  *contacts FILE ------------------------------- contacts section  */ 
+.contact
+    position: relative
+    padding: 0px 0 100px
+    background-color: #fff
+.contact__title
+    @include titleText
+    margin-top: 65px
+    font-weight: 600
+.contact__blocks
+    grid-template-columns: repeat(4, 1fr)
+    grid-column-gap: 30px
+    margin-top: 50px
+    margin-bottom: 70px
+.contact__item
+    padding: 40px 20px 42px 20px
+    background-color: #F2F4F3
+    img
+        width: 48px
+        height: 48px
+        margin: 0 auto 20px auto
+    p
+        min-height: 50px
+        height: 50px
+        max-height: 50px
+        width: 100%
+        text-align: center
+        font-size: 16px
+        line-height: 24px
+        color: $dark
+.contact__map
+    height: 539px
+    width: 100%
+    iframe
+        height: 539px
+.contact__form, .reg__form
+    border: 2px solid $dGreen
+    box-sizing: border-box;
+    width: 100%
+    height: auto
+    padding: 20px 30px 40px
+    color: $dark
+.contact__form, .reg__form, .forgot__form
+    .form__indent
+        margin-top: 20px
+    .form__title
+        font-weight: 600
+        font-size: 20px
+        line-height: 24px
+        text-transform: uppercase
+    .form__subtitle
+        font-size: 14px
+        line-height: 16px
+        margin-bottom: 7px
+    .form__field
+        border: 1px solid #DFE9E8
+        box-sizing: border-box
+        border-radius: 3px
+        font-size: 14px
+        line-height: 17px
+        color: $dark
+        padding: 9px 10px
+        width: 100%
+    .form__area
+        height: 70px
+        resize: none
+    .form__sbm
+        padding: 13px 50px
+        font-size: 14px
+        line-height: 20px
+        text-transform: uppercase
+        color: #fff
+        width: max-content
+        background-color: $dGreen
+        border: none
+        margin-top: 30px 
+        &:hover
+            background-color: $hoverLink
+        // font-weight: 600
+.form__thx
+    text-align: center
+    .form__title
+        margin-top: 30px
+    .form__text
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: 20px
+
+// ! registration page -------------------------------------
+.reg
+    background-color: #fff
+    padding-bottom: 100px
+    position: relative
+.reg__flex
+    margin-top: 70px
+    display: flex
+.reg__form
+    width: 50%
+    padding-bottom: 49px
+    .form__login
+        font-size: 14px
+        line-height: 16px
+        margin-top: 30px
+        p
+            color: $dym
+        a
+            color: $dGreen
+            text-decoration: underline
+            &:hover
+                color: $hoverLink
+    .form__sbm
+        margin-left: 50%
+        transform: translateX(-50%)
+    .form__title 
+        text-align: center
+        text-transform: none
+        font-size: 30px
+        line-height: 36px
+        margin-top: 13px
+.reg__pict
+    width: 50%
+    background-image: url('../images/reg_background.jpg')
+    width: 470px
+    min-height: 545px
+    background-repeat: no-repeat
+    background-size: auto 100%
+
+
+
+
+
+// login file !--------------------------------------------
+.login
+    padding-bottom: 63px
+    background-color: #fff
+    position: relative
+    .reg__flex
+        margin-top: 72px
+    .reg__form
+        padding: 33px 60px 54px
+    .form__login
+        justify-content: center
+        margin-top: 20px
+    .reg__pict
+        width: 470px
+        min-height: 420px
+        background-image: url("../images/login_bc.jpg")
+        background-size: auto 100%;
+        background-position: center center;
+    form
+        div:first-child
+            margin-top: 30px
+.login__forgot
+    width: 100%
+    a
+        float: right
+        font-size: 14px
+        line-height: 16px
+        text-decoration-line: underline
+        color: $dGreen
+        margin-top: 10px
+        &:hover
+            color: $hoverLink
+
+
+
+
+
+// forgot file !-----------------------------------
+.forgot
+    position: relative
+    padding-bottom: 203px
+.forgot__win
+    margin-top: 72px
+    padding: 33px 60px 54px
+    background-color: #fff
+    border: 2px solid #31ADA5;
+    box-sizing: border-box;
+.forgot__title
+    text-align: center
+    text-transform: none
+    font-size: 30px
+    line-height: 36px
+    color: $dark
+    font-weight: 600
+.forgot__form
+    .form__sbm
+        margin-left: 50%
+        transform: translateX(-50%)
+        &:hover
+            background-color: $hoverLink
+
+
+
+
+
+
+// success file !--------------------------------------
+.success
+    padding: 0 0 188px
+    background-color: #fff
+.success__title
+    @include titleText
+    line-height: 36px
+    text-transform: none
+.success__pict
+    margin-top: 135px
+    img
+        margin: 0 auto
+.success__desc
+    width: 550px
+    font-size: 16px
+    line-height: 24px
+    text-align: center
+    color: $dark
+    margin: 0 auto
+    margin-top: 20px  
+.success__btn
+    font-size: 14px 
+    line-height: 20px
+    text-transform: uppercase
+    background-color: $dGreen
+    color: #fff
+    padding: 12px 20px
+    border: none
+    margin-top: 36px
+    &:hover
+        background-color: $hoverLink
+    &:disabled
+        background-color: $dark
+.success__block
+    div:last-child
+        width: 100%
+        text-align: center
+
+
+
+
+// error section
+.error
+    background-color: #fff
+    background-image: url("../images/vitamins_bc.png")
+    background-position: bottom right
+    background-repeat: no-repeat
+.vitamins
+    padding-bottom: 244px
+    background-image: url("../images/vitamins.svg")
+    background-repeat: no-repeat
+    background-position: top 50% right 0%
+.error__title
+    margin-top: 100px
+    font-size: 200px;
+    line-height: 200px;
+    color: $dark
+.error__desc
+    font-size: 18px;
+    line-height: 24px;
+    color: $dark
+    margin-bottom: 63px
+
+
+
+
+// blog file !------------------------------------------------
+.blog
+    background-color: #fff
+    position: relative
+    padding-bottom: 140px 
+.blog__title
+    @include titleText
+    margin-top: 65px
+    margin-bottom: 50px
+.blog__left-content, .blog__left-content nav
+    height: 100%
+.blog__nav
+    padding-right: 20px
+    border-right: 1px solid #DFE9E8
+    height: 100%
+.blog__nav-item
+    padding-bottom: 20px
+    border-bottom: 1px solid #DFE9E8
+    color: $dark
+    margin-bottom: 20px
+    justify-content: space-between
+    transition: .2s
+    &:hover
+        cursor: pointer
+        color: $dGreen
+    .svg-container
+        transform: rotate(-90deg)
+.card
+    background-color: #F2F4F3
+    width: 254px
+    height: 370px
+    transition: .2s
+    &:hover
+        cursor: pointer
+        transform: scale(1.1)
+        .card__desc p 
+            color: $dGreen
+.blog__card
+    width: 100%
+    grid-template-columns: repeat(3, 1fr)
+    grid-column-gap: 30px
+    grid-row-gap: 30px
+    .card__pict
+        height: 250px
+        background-image: url("../images/news.jpg")
+        background-size: auto 100%
+        background-position: center center
+        background-repeat: no-repeat
+    .card__popular
+        padding: 20px 20px 0 20px
+        font-size: 14px;
+        line-height: 18px;
+        color: $dym
+        p
+            margin-top: 2px
+            margin-right: 20px
+            max-height: 72px
+            // min-height: 50px
+        span
+            margin-top: 2px
+            margin-left: 3px
+    .card__desc
+        padding: 5px 20px 0 20px
+        font-size: 14px;
+        line-height: 18px;
+        color: $dark
+        font-weight: 600
+    .card__type
+        position: absolute
+        top: 236px
+        left: 20px
+        color: #fff
+        background: linear-gradient(79.02deg, #31ADA5 0%, #71CC98 99.99%, #F2F4F3 100%);
+        padding: 5px 8px 5px 10px
+        font-size: 12px;
+        text-transform: uppercase
+        line-height: 14px
+        letter-spacing: 0.05em
+
+.blog__card
+    div:nth-child(2),div:nth-child(8),div:nth-child(14)
+        .card__pict
+            background-image: url("../images/blog_pict2.jpg")
+    div:nth-child(3),div:nth-child(9),div:nth-child(15)
+        .card__pict
+            background-image: url("../images/news2.jpg")
+    div:nth-child(4),div:nth-child(10),div:nth-child(16)
+        .card__pict
+            background-image: url("../images/complex_3.jpg")
+    div:nth-child(5),div:nth-child(11),div:nth-child(17)
+        .card__pict
+            background-image: url("../images/blog_pict5.jpg")
+    div:nth-child(6),div:nth-child(12), div:nth-child(18)
+        .card__pict
+            background-image: url("../images/complex_1.jpg")
+.blog__underline
+    background: #DFE9E8
+    margin-top: 70px
+    margin-bottom: 30px
+.blog__pages
+    ul
+        justify-content: center
+    .pages__item
+        @include bigText
+        margin-right: 10px
+        color: $dym
+    .pages__item-active
+        color: $dGreen
+        font-weight: 600
+    .svg-container
+        transform: rotate(-90deg)
+        margin-top: -6px
+
+
+
+
+
+
+// full blog file !---------------------------------
+.blog_full
+    position: relative
+    background-color: #fff
+    padding-bottom: 101px
+    .card__popular
+        margin-top: 16px
+        color: $dym
+        .svg-container
+            margin: -2px 3px 0 10px
+.blog_full__title
+    margin-top: 65px
+    img
+        width: 100%
+.blog_full__text
+    @include titleText
+    text-transform: none
+    margin-bottom: 20px
+.blog_full__content
+    line-height: 28px
+    color: $dark
+    a
+        text-decoration: underline
+        color: $dGreen
+    i
+        font-style: italic
+    h3,h4,h5,h6
+        padding: 20px 0 10px 0
+        font-size: 20px
+        font-weight: 600
+    p
+        font-size: 16px
+        padding: 10px 0
+    ul
+        padding: 10px 0 10px 20px
+    ul, ul li 
+        list-style-type: disc  
+    ul li
+        color: $dGreen  
+    ul li span 
+        color: $dark
+    iframe
+        width: 100%
+        height: 450px
+        padding: 40px 0 30px 0
+    blockquote
+        padding: 20px 0 10px 30px 
+        p
+            font-size: 20px
+            line-height: 30px
+            padding: 0
+            border-left: 3px solid $dGreen
+            padding-left: 20px
+    table
+        margin: 0 0 40px 0
+        tr
+            border-bottom: 1px solid #DFE9E8
+            th
+                color: $dym
+                font-weight: bold
+                text-transform: uppercase
+            th:last-child, td:last-child
+                width: 100%
+            th, td
+                min-width: 150px
+                padding: 20px 0 20px 20px
+    img 
+        margin: 40px 0 30px 0
+        width: 100%
+        height: 450px
+    ol, ol li
+        list-style-type: none
+    ol 
+        margin-bottom: 10px
+        li
+            counter-increment: step-counter;
+        li:before
+            content: counter(step-counter)
+            color: #fff
+            padding: 2px 7px
+            border-radius: 50%
+            background-color: $dGreen
+            margin-right: 10px
+.blog__mainLine
+    background-color: #DFE9E8
+    width: 100%
+    margin-top: 50px
+    margin-bottom: 70px
+.blog__sectitle
+    @include titleText
+.blog_full 
+    .card
+        width: 100%
+    .blog__card
+        margin-top: 50px
+        div:nth-child(2) .card__pict
+            background-size: 100% auto
+
+
+
+
+
+// ! category file !---------------------------------
+.cat__title
+    margin-top: 65px
+    @include titleText
+    margin-bottom: 50px
+.cat,.catP
+    background-color: #fff
+    position: relative
+    padding-bottom: 100px
+.subcat
+    background: linear-gradient(32.27deg, #31ADA5 0%, #71CC98 99.99%, #F2F4F3 100%);
+    h3
+        @include bigText
+        text-transform: uppercase
+        color: #fff
+        padding: 8px 0 8px 20px
+        font-family: $bold
+.cat__vitamins
+    grid-template-columns: 1fr 1.4fr 1.7fr
+.cat__list
+    background-color: #F2F4F3
+    h5
+        font-size: 16px
+        line-height: 20px
+        color: $dark
+        font-weight: 600
+        margin-bottom: 10px
+    div
+        padding: 20px 20px 30px 20px
+        border-right: 1px solid #DFE9E8
+    div:nth-child(2),div:last-child
+        padding-left: 60px
+    .d-grid
+        margin-top: 10px
+        grid-template-columns: 1fr 1fr
+        width: max-content
+        grid-column-gap: 40px
+    li
+        width: max-content
+        font-size: 14px
+        line-height: 24px
+.cat__vitamins
+    height: 150px
+.cat__adds
+    height: 200px
+    grid-template-columns: 1fr 1.2fr 1.3fr 1.4fr 1.4fr
+    div:nth-child(2), div:nth-child(3), div:nth-child(4),div:last-child
+        padding-left: 40px
+.cat__superfood
+    grid-template-columns: 1fr 1.1fr  1.3fr
+    div:first-child ul
+        grid-column-gap: 10px
+.cat__etc
+    height: 220px
+    grid-template-columns: 1fr 1.4fr 1.4fr 2.8fr 
+    div:nth-child(2), div:nth-child(3), div:last-child
+        padding-left: 60px
+
+
+
+
+// !new category file _---------------------------------------
+.catP__content
+    grid-template-columns: repeat(3, 1fr)
+    grid-column-gap: 30px
+    grid-template-rows: 370px 600px 870px
+    grid-row-gap: 30px
+.catP__card
+    background-color: #F2F4F3
+    overflow: hidden
+.catP__pict
+    height: 180px
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: 100% auto
+    transition: .4s
+    &:hover
+        cursor: pointer
+        transform: scale(1.2)
+        transition: .4s
+.catP__first
+    .catP__pict
+        background-image: url("../images/complex_1.jpg")
+.catP__second
+    .catP__pict
+        background-image: url("../images/complex_2.jpg")
+.catP__third
+    .catP__pict
+        background-image: url("../images/complex_3.jpg")
+.catP__fourth
+    .catP__pict
+        background-image: url("../images/catalog_2.jpg") 
+.catP__sixth
+    .catP__pict
+        background-image: url("../images/catalog_3.jpg") 
+.catP__fifth
+    .catP__pict
+        background-image: url("../images/catalog_1.jpg") 
+.catP__seventh
+    .catP__pict
+        background-image: url("../images/catalog_4.jpg") 
+.catP__desc
+    @include defaultText
+    margin: 20px 0 31px 20px
+    color: $dark 
+    h5
+        margin: 20px 0 10px
+        font-weight: 600
+        font-size: 16px
+        line-height: 20px
+    .d-grid
+        grid-template-columns: 1fr 1fr
+        width: max-content
+        grid-column-gap: 40px
+    ul li:hover
+        color: $dGreen
+        cursor: pointer
+.catP__title
+    background: linear-gradient(63.47deg, #31ADA5 0%, #71CC98 99.99%, #F2F4F3 100%)
+    color: #fff
+    text-transform: uppercase
+    font-family: $bold
+    font-size: 16px
+    line-height: 18px
+    padding: 11px 0 11px 20px 
+    display: block
+    position: relative
+.catP__fifth
+    grid-row-start: 2
+    grid-row-end: 4
+    grid-column-start: 2
+    grid-column-end: 3
+.catP__fifth
+    background-color: #fff
+    .catP__desc
+        background-color: #f2f4f3
+        margin: 0
+        padding: 20px 0 31px 20px
+        h5:first-child
+            margin-top: 0px
+
+
+
+
+// category file !-----------------------------------------
+.category
+    background-color: #fff
+    position: relative
+    padding-bottom: 70px
+.filter
+    border-right: 1px solid #DFE9E8
+    margin-top: 65px
+.filter__text
+        font-size: 16px
+        line-height: 24px   
+        color: $dGreen
+        font-weight: 600
+.filter__title
+        margin-bottom: 13px
+        justify-content: space-between
+.filter__expand
+    &:hover
+        cursor: pointer
+.filter__price
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button
+        -webkit-appearance: none;
+    input[type='number'] 
+        -moz-appearance: textfield;
+    
+    .price__field
+        width: 70px
+        background-color: #fff
+        border: 1px solid #DFE9E8
+        box-sizing: border-box
+        border-radius: 3px
+        font-size: 13px
+        line-height: 24px
+        color: $dym
+        padding-left: 10px
+        height: 25px
+    .price__separator
+        margin: 3px 5px 0 5px
+    .price__curr
+        font-size: 13px
+        line-height: 24px
+        color: $dym
+        margin-left: 5px
+        margin-right: 15px
+    .price__sbm
+        width: 35px
+        height: 25px
+        border: 1px solid #DFE9E8
+        box-sizing: border-box
+        background-color: #fff
+        border-radius: 3px
+        font-size: 12px
+        line-height: 24px
+        color: $dGreen
+        transition: .2s
+        &:hover
+            background: $lGreen
+            color: #fff
+            border: 1px solid $lGreen
+    .ui-state-default
+        border-radius: 50%
+        background-color: $dGreen
+        border: none
+        margin-top: -3px
+        z-index: 1
+        &:hover
+            background-color: #3CCDC4
+            cursor: pointer
+        &:focus
+            outline: none
+    .js_slider-range
+        height: 4px
+        margin-top: 20px
+        background-color: #DFE9E8
+        border: none
+        .ui-widget-header
+            background-color: $dGreen
+            border: none
+.filter__line
+    width: 100%
+    background-color: #DFE9E8
+    margin: 27px 0 20px
+.filter__form
+    .form__item
+        margin-top: 10px
+    .form__checkbox
+        height: 16px
+        width: 16px
+        margin: 4px 7px 0 0
+
+    .form__name
+        @include defaultText
+        color: $dark
+        span
+            color: $dym
+    .form__x
+        width: 16px
+        height: 16px
+        margin: 4px 0 0 7px
+        &:hover
+            cursor: pointer
+    .form__more
+        font-size: 12px
+        line-height: 24px
+        text-transform: uppercase
+        color: $dym
+        margin-top: 10px
+        p
+            margin-left: 7px
+        img
+            width: 16px
+            height: 16px
+            margin-top: 4px
+.form__reset
+    font-size: 12px
+    line-height: 24px
+    color: $dym
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    padding: 8px 30px
+    border: 1px solid #DFE9E8
+    background-color: #fff
+    margin-top: 40px
+    box-sizing: border-box
+    font-weight: 600
+    transition: .2s
+    &:hover
+        background-color: $dGreen
+        border: 1px solid $dGreen
+        color: #fff
+        transition: .2s
+.filter_right
+    padding-left: 30px
+    margin-top: 65px
+    .filter__dropDown
+        position: relative
+        .p_imitate
+            width: 75px
+        .dropDown__list
+            position: absolute
+            right: 0
+            top: 39px
+            width: 160px
+            border: 1px solid #DFE9E8
+            box-sizing: border-box
+            border-radius: 3px
+            height: auto
+            z-index: 100
+        .dropDown__item
+            padding: 7px 10px 0 10px
+            font-size: 13px
+            line-height: 16px
+            color: $dym
+            &:hover
+                background-color: #dfe9e8
+                cursor: pointer
+    .filter__title
+        @include titleText
+        text-align: left
+    .filter__sort
+        margin-top: 10px
+        float: right
+        p
+            margin-top: 9px
+            @include smallText
+            margin-right: 10px
+        .sort
+            width: 75px
+        .sort__container
+            border: 1px solid #DFE9E8
+            box-sizing: border-box
+            border-radius: 3px
+            background-color: #fff
+            justify-content: space-between
+            width: 160px
+            height: 30px
+            padding: 6px 10px
+            p
+                margin-top: 0px
+            &:hover
+                cursor: pointer
+    .filter__content
+        grid-template-columns: repeat(3, 1fr)
+        grid-column-gap: 30px
+        margin-top: 70px
+    .product
+        position:relative
+        .block
+            height: 420px
+        
+.absolute__block
+    position: absolute
+    top: 0
+    left: 0
+.category__more
+    margin: 40px auto
+    width: auto
+    height: 50px
+    border: 1px solid #DFE9E8
+    box-sizing: border-box
+    padding: 13px 36px 13px 40px
+    @include defaultText
+    letter-spacing: 0.1em
+    text-transform: uppercase   
+    color: $dym
+    background-color: #fff
+    font-weight: 600
+    transition: .2s
+    .svg-container
+        margin: -3px 0 0 10px
+        path
+        stroke: $dGreen
+    &:hover
+        background-color: $dGreen
+        border: 1px solid $dGreen
+        color: #fff
+        transition: .2s
+        .svg-container path
+            stroke: #fff
+.category__desc
+    width: 90%
+    @include defaultText
+    color: $dym
+
+
+
+
+
+
+// product_page file !--------------------------------------------
+.prod
+    background-color: #fff
+    position: relative
+    padding-bottom: 75px
+.section_margin
+    margin-top: 65px
+.prod__slider
+    .image-container
+        width: 100%
+.prod__product
+    height: 360px
+    width: auto
+    margin: 20px auto
+.prod__name
+    font-size: 30px
+    line-height: 36px
+    color: $dark
+    font-weight: 600
+.prod__slider
+    .slick-dots li button 
+        background: url("../images/OcuviteEyeGummies(big).png")
+        text-indent: -9999px
+        overflow: hidden
+        width: 60px     
+        height: 60px
+        background-position: center center
+        background-size: 100% 100%
+    .slick-dots li
+        margin-right: 98px
+    .slick-dots .slick-active button
+        border: 1px solid $dGreen
+.prod
+    .slick__nav
+        top: 11em
+    .slick__buy_more
+        top: 20em
+    .slick__shortNav
+        width: 92%
+        margin-left: 0
+        div
+            transform: rotate(-90deg);
+        div:first-child
+            transform: rotate(90deg);
+    .rate__star
+        svg
+            width: 24px
+            height: 24px
+    .star__active
+        path
+            fill: $dGreen
+    .star__deactive
+        path
+            fill: $wDark
+    .rate__text
+        font-size: 13px
+        line-height: 24px
+        margin-left: 8px
+        color: $dym
+    .timer
+        margin: 23px 0 30px
+        border: 1px solid #DFE9E8
+        box-sizing: border-box
+        padding: 15px 20px 20px 20px
+    .timer__title
+        font-size: 18px
+        line-height: 18px
+        color: #FE3E6C
+        font-weight: 600
+        margin-bottom: 7px
+    .timer__days
+        background-color: #F2F4F3
+        border-radius: 3px
+        font-size: 14px
+        line-height: 18px
+        color: $dark
+        padding: 5px 6px 7px 6px
+        font-weight: 600
+        span
+            font-size: 18px
+    .timer__separate
+        font-weight: 600
+        font-size: 14px
+        line-height: 26px
+        margin: 0px 3px
+    .char__title
+        font-size: 16px
+        line-height: 20px
+        color: $dark
+        margin-bottom: 12px
+        font-weight: 600
+    .char__item
+        margin-bottom: 6px
+        font-size: 14px
+        line-height: 20px        
+    .char__subtitle
+        width: 300px
+        color: $dym
+    .char__result
+        color: $dark
+        width: 100%
+    .filter__line
+        margin: 20px 0 10px
+    .old_price__value
+        font-size: 24px
+        line-height: 36px
+        color: $dym
+    .new_price__value
+        margin-left: 10px
+        font-size: 30px
+        line-height: 36px 
+        color: $dark
+        font-weight: 600
+    .send
+        .send__btn
+            background-color: $dGreen
+            padding: 15px 43px
+            font-size: 16px
+            line-height: 20px
+            letter-spacing: 0.08em
+            text-transform: uppercase
+            color: #fff
+            margin: 10px 20px 0 0
+            border: none
+            &:hover
+                background-color: #3ccdc4
+        .send__fav
+            padding: 13px
+            border: 1px solid #31ADA5
+            box-sizing: border-box
+            width: 50px
+            height: 50px
+            margin-top: 10px
+            &:hover
+                cursor: pointer
+            img
+                width: 24px
+                height: 24px
+                margin: 0 auto
+    .buy
+        background: #F2F4F3
+        padding: 15px 20px 20px 20px
+        margin-top: 20px
+        .buy__title
+            font-size: 16px
+            line-height: 20px
+            color: $dark
+            margin-bottom: 6px
+        .buy__field
+            background-color: #fff
+            border: 1px solid #DFE9E8
+            box-sizing: border-box
+        .buy__phone
+            border-right: none
+            width: 303px
+            padding: 12px 0 12px 10px
+            font-size: 14px
+            line-height: 16px
+            color: $dym
+        .buy__sbm
+            border-left: none
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: $dark
+            font-weight: 600
+            padding: 10px 20px
+            transition: .2s
+            &:hover
+                color: $dGreen
+                transition: .2s
+    .desc
+        margin-top: 84px
+        .desc__title
+            font-weight: 600
+            font-size: 16px
+            line-height: 20px
+            color: $dark
+            width: 100%
+            text-align: left
+        .desc__text
+            @include defaultText
+            color: $dark
+        .filter__line
+            margin: 3px 0 20px
+    .callback
+        margin-top: 65px
+        font-weight: 600
+        .callback__head
+            justify-content: space-between
+        .head__text
+            p
+                font-size: 16px
+                line-height: 31px
+                color: $dark
+                span
+                    color: $dym
+        .callback__leave
+            background: #FFFFFF
+            border: 1px solid #DFE9E8
+            box-sizing: border-box
+            padding: 5px 20px
+            font-size: 12px
+            line-height: 20px
+            text-transform: uppercase
+            color: $dGreen
+            transition: .2s
+            &:hover
+                background: $dGreen
+                color: #fff
+                border: 1ps solid $dGreen
+                transition: .2s
+        .filter__line
+            margin: 10px 0 20px
+        .content
+            font-weight: 300
+            line-height: 24px
+            color: $dark
+            .desc__info-name
+                font-weight: 600
+                width: 40%;
+            .rate
+                margin: -1px 0 0 15px
+            .rate__star
+                width: 18px
+                height: 18px
+                svg
+                    width: 18px
+                    height: 18px
+            .date
+                font-size: 13px
+                color: $dym
+                width: 50%
+                text-align: right
+            .comments
+                margin: 5px 0 10px
+                font-size: 13px
+                line-height: 20px
+        .conent__show
+            background: #F2F4F3
+            color: $dGreen
+            padding: 3px 33px
+            font-size: 12px
+            line-height: 24px
+            text-transform: uppercase
+            letter-spacing: 0.1em
+            border: none
+            margin-top: 20px
+            transition: .2s
+            &:hover
+                background: $dGreen
+                color: #fff
+                transition: .2s
+    .callback__form
+        width: 100%
+        padding: 30px 20px 43px 20px
+        background: #F2F4F3
+        border-radius: 3px
+        .from__title
+            font-size: 24px
+            line-height: 24px
+            color: $dark
+            margin-bottom: 17px
+        .form__subtitle
+            margin: 13px 0 4px 0
+            @include defaultText
+            color: $dark
+            font-weight: 300
+        .callback_form__filed
+            width: 100%
+            background: #FFFFFF
+            border: 1px solid $wDark
+            box-sizing: border-box
+            border-radius: 3px
+            @include bigText
+            padding: 9px 0 9px 10px
+            resize: none
+            font-size: 14px
+            font-weight: 300
+            text-transform: none
+        textarea
+            height: 80px
+        .js_rate-deactive
+            path
+                fill: #fff
+                stroke: $dGreen
+        .buy__field
+            border: 1px solid #DFE9E8
+            box-sizing: border-box
+        .buy__sbm
+            margin-top: 13px
+            background-color: $dGreen
+            color: #fff
+            border-left: none
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            font-weight: 600
+            padding: 13px 21px
+    .callback_nohave
+        font-weight: 300
+        .head__text p 
+            font-weight: 600
+            span
+                font-weight: 300
+        .edit
+            margin-top: 70px
+            text-align: center
+        .edit__pict
+            width: 48px
+            height: 48px
+            margin: 0 auto 30px auto
+        .edit__text
+            font-size: 16px
+            line-height: 24px
+            color: $dym
+            width: 75%
+            margin: 0 auto 52px auto
+        .edit__btn
+            background: #FFFFFF
+            border: 1px solid #31ADA5
+            box-sizing: border-box
+            padding: 10px 40px
+            font-size: 12px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: $dGreen
+            margin: 0 auto
+            font-weight: 600
+            &:hover
+                background-color: $dGreen
+                color: #fff
+    .half_line
+        width: 32%
+        background-color: $wDark
+        margin: 0 auto
+        margin-top: 70px
+    .prod__description
+        width: 66%
+        margin: 70px auto 0 
+        @include defaultText
+    .prod__title
+        @include titleText
+        margin-top: 100px
+        margin-bottom: 40px
+
+
+
+
+
+
+
+
+
+
+
+
+
+// modal WINDOW !-----------------------------------
+.drkside
+    width: 100%
+    height: 100vh
+    position: fixed
+    top: 0 
+    left: 0
+    background: rgba(0,0,0,0.2)
+    z-index: 8
+.modal
+    display: block
+    z-index: 1001
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: #fff
+    width: 31%
+    height: 220px
+    margin: auto
+    padding: 0px 37px 0 23px
+.modal__title
+    @include titleText
+    width: 100%
+    line-height: 36px
+    margin-top: 70px
+    margin-bottom: 20px
+    text-transform: none 
+.modal__text
+    text-align: center
+    margin-bottom: 50px
+.modal__close
+    position: absolute
+    top: 20px
+    right: 15px
+    width: 32px
+    height: 32px
+    &:hover
+        cursor: pointer
+
+
+.modal__curt
+    display: block
+    z-index: 1001
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: #fff
+    padding: 20px 20px 53px 20px
+    margin: auto
+    width: 37.5%
+    height: 690px
+    .curt__products__buy
+        height: 360px
+        width: 100%
+        overflow: auto
+    .filter__line
+        margin: 12px 0 30px 0
+.curt__title
+    @include titleText
+    text-transform: none
+    text-align: left
+    font-weight: 300
+.curt__products
+    margin-bottom: 20px
+    color: $dark
+    width: 100%
+    .curt__desc
+        width: 65%
+    .picture
+        height: 100px
+        width: 140px
+        img
+            height: 100%
+            width: auto
+            margin: 0 auto
+    .curt__name
+        font-size: 18px
+        line-height: 24px
+        width: 100%
+        margin-bottom: 4px
+        transition: .2s
+        &:hover
+            color: $dGreen
+            transition: .2s
+    .prices
+        margin-bottom: 14px
+        .old_price
+            font-size: 16px
+            line-height: 24px
+            color: $dym
+        .new_price
+            font-size: 18px
+            line-height: 24px
+            margin-left: 7px
+    table
+        tr td
+            margin-top: 20px
+        .value
+            border: 1px solid #DFE9E8
+            box-sizing: border-box
+            vertical-align: middle
+            padding: 5px 15px
+        .positive
+            padding-left: 10px
+        .negative
+            padding-right: 10px
+        .symbol
+            padding-top: 5px
+            &:hover
+                cursor: pointer
+    .curt__price
+        position: relative
+        .price
+            position: absolute
+            bottom: 10px
+            right: 0
+            width: max-content
+            font-weight: 600
+        .close img
+            width: 24px
+            height: 24px
+            &:hover
+                cursor: pointer
+.modal__curt
+    .curt__price-line
+        background: $dGreen
+        width: 100%
+        margin-top: 50px
+    .curt__summ
+        font-size: 18px
+        line-height: 24px
+        text-align: right
+        margin: 20px 0 12px
+        span
+            margin-left: 3px
+            font-weight: 600
+            font-size: 24px
+    .curt__btns
+        grid-template-columns: 1fr 1fr
+        grid-column-gap: 40px
+        button
+            font-size: 14px
+            line-height: 20px
+            text-transform: uppercase
+            box-sizing: border-box
+            padding: 13px 0 12px
+            font-weight: 600
+    .curt__continue
+        background-color: #fff
+        border: 1px solid #DFE9E8
+        color: $dym
+        transition: .2s
+        &:hover
+            border: 1px solid #3CCDC4
+            background: #3CCDC4
+            color: #fff
+            transition: .2s
+    .curt__buy
+        background-color: $dGreen
+        color: #fff
+        border: none
+        transition: .2s
+        &:hover
+            border: 1px solid #3CCDC4
+            background: #3CCDC4
+            color: #fff
+            transition: .2s
+.modal__buy
+    display: block
+    z-index: 1001
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: #fff
+    padding: 20px 20px 36px 20px
+    margin: auto
+    width: 30%
+    height: 250px
+    .buy__title
+        @include titleText
+        text-transform: none
+        text-align: left
+        font-weight: 300
+    .filter__line
+        margin: 12px 0 30px 0
+    .modal__but-text
+        font-size: 14px
+        line-height: 16px
+        color: $dark
+        margin-bottom: 7px
+    form .d-flex
+            width: 86%
+            margin-bottom: 20px
+    .modal__field
+        border: 1px solid #DFE9E8
+        box-sizing: border-box
+        border-radius: 3px
+        width: 100%
+    .modal__sbm
+        background-color: $dGreen
+        font-size: 14px
+        line-height: 20px
+        text-transform: uppercase
+        color: #fff
+        padding: 10px 39px
+    .modal__buy-desc
+        font-size: 13px
+        color: $dark
+        line-height: 18px
+
+
+
+
+
+
+// check file !----------------------------------------------
+.check
+    position: relative
+    background-color: #fff
+    padding-bottom: 100px
+.check__title
+    @include titleText
+    margin: 65px 0 20px 
+.check__subtitle
+    line-height: 24px
+    margin-top: 30px
+    .num
+        font-weight: 600
+        background-color: $dGreen
+        padding: 2px 9px 2px 10px
+        color: #fff
+        border-radius: 50%
+        font-size: 16px
+        margin-right: 8px
+    h3
+        margin-top: 2px
+        color: $dark
+        font-size: 20px
+.check__login
+    margin: 20px 0 15px 30%
+    font-size: 14px
+    line-height: 16px
+    color: $dym
+    a
+        color: $dGreen
+        text-decoration: underline
+.check__line
+    font-size: 14px
+    line-height: 35px
+    margin-top: 10px
+    p
+        margin-left: 12%
+        width: 26%
+    input
+        line-height: 16px
+        border: 1px solid #DFE9E8
+        box-sizing: border-box
+        border-radius: 3px
+        background: #fff
+        width: 60.5%
+        padding: 9.5px 30px 9.5px 10px
+    input[type="tel"]
+        width: max-content
+    input[name="otdel"],input[name="city"]
+        margin-left: 35px
+        width: 88%
+    .d-flex
+        width: 100%
+.check__radio
+    margin: 20px 0 0 38%
+    @include defaultText
+
+    &:hover
+        cursor: pointer
+    .radio_custom
+        width: 20px
+        height: 20px
+        border: 1px solid #DFE9E8
+        box-sizing: border-box
+        border-radius: 50%
+        background: #fff
+        text-align: center
+        &:hover
+            cursor:pointer
+        .active
+            margin: 4px auto
+            width: 10px
+            height: 10px
+            background: $dark
+            border-radius: 50%
+    p
+        @include defaultText
+        color: $dark
+        margin-left: 7px
+        line-height: 20px
+.check__adress-shop a
+    font-size: 14px
+    line-height: 16px
+    text-decoration: underline
+    color: $dym
+    margin: 6px 0 0 calc(38% + 20px + 7px)
+.check__call
+    margin: 40px 0 0 38%
+    @include defaultText
+    color: $dark
+    .js_checkedBox:hover
+        cursor: pointer
+    img
+        width: 16px
+        height: 16px
+        margin-top: 4px
+    p
+        margin-left: 7px
+.check__sbm
+    @include button
+    padding: 13px 19px 12px 20px
+    margin: 20px 0 0 38%
+    border: none
+    transition: .2s
+    &:hover
+        background: $lGreen
+        color: #fff
+
+
+.check_cart
+    margin-top: 30px
+    border: 2px solid $dGreen
+    box-sizing: border-box
+    padding: 20px 20px 32px 20px
+    .check_cart__title
+        font-size: 20px
+        line-height: 24px
+        text-transform: uppercase
+        color: $dark
+    .filter__line
+        margin: 10px 0 20px
+    .end_line
+        background: $dGreen
+        width: 100%
+        margin: 28px 0 20px
+.check_cart__info
+    width: 100%
+.check_cart__item
+    margin-top: 20px
+    font-size: 14px
+    line-height: 20px
+    color: $dark
+    .picture
+        height: 70px
+        width: 90px
+        img
+            height: 100%
+            width: auto
+    .name
+        width: 100%
+        transition: .2s
+        &:hover
+            cursor: pointer
+            color: $dGreen
+            transition: .2s
+    .desccription
+        margin-top: 10px
+        width: 100%
+        justify-content: space-between
+        font-size: 13px
+        line-height: 18px
+        color: $dym
+        span
+            color: $dark
+    .check_cart__full
+        font-size: 14px
+        line-height: 18px
+        width: 100%
+        color: $dym
+        margin-top: 5px
+        font-weight: 600
+        .price
+            text-align: right
+            span
+                color: $dark
+.check_cart
+    .promo
+        font-size: 14px
+        line-height: 16px
+        color: $dark
+        .promo__send
+            margin-top: 18px
+        .promo__field
+            background: #FFFFFF
+            border: 1px solid #DFE9E8
+            box-sizing: border-box
+            border-radius: 3px 0px 0px 3px
+            padding-left: 10px
+        .promo__sbm
+            @include button
+            padding: 8px 20px 7px 20px
+        .promo__sum
+            margin-top: 27px
+            text-align: right
+            width: 100%
+            font-size: 18px
+            line-height: 24px
+            color: $dym
+        
+            span
+                color: $dark
+                font-weight: 600
+
+        .promo_result
+            h6 
+                font-size: 13px
+                color: $dGreen
+                margin-top: 10px
+                line-height: 16px
+            p
+                font-size: 14px
+                line-height: 20px
+                color: $dym
+                text-align: right
+            p:first-child span
+                color: $dark
+            p:last-child
+                color: $dGreen
+        .promo__success
+            p
+                display:block
+        .promo__error
+            p
+                display: none
+            h6
+                color: #EB3E67
+
+
+
+
+
+
+
+// !profile file ---------------------------------------------
+.profile
+    background: #fff
+    position: relative
+    padding-bottom: 100px
+.profile__title
+    @include titleText
+    margin:  65px 0 50px
+    text-transform: none
+.profile__menu
+    border-right: 1px solid #DFE9E8
+.nav__title
+    font-size: 20px
+    line-height: 24px
+    text-transform: uppercase
+    color: $dGreen
+    margin-bottom: 25px
+    font-weight: 600
+
+.profile_nav__arrow
+    display: none
+    transform: rotate(-90deg)
+    width: 16px 
+    height: 16px
+.profile_nav__item
+    padding: 17px 15px 17px 10px 
+    background-color: #fff
+
+    &:hover
+        cursor: pointer
+.nav__select
+    font-weight: 600
+    background-color: #F2F4F3
+    display: flex
+    justify-content: space-between
+    .profile_nav__arrow
+        display: block
+
+.profile__subtitle
+    font-size: 20px
+    line-height: 24px
+    color: $dark
+    margin: 25px 0 20px 7%
+    font-weight: 600
+.profile__contents
+    width: 95%
+    grid-template-columns: repeat(2, 40%)
+    grid-column-gap: 20px
+    margin-left: 10%
+    .content
+        margin-top: 15px
+        font-size: 14px
+        line-height: 16px
+        color: $dark
+        input
+            margin-top: 7px
+            background: #FFFFFF
+            border: 1px solid #DFE9E8
+            box-sizing: border-box
+            border-radius: 3px
+            width: 100%
+            padding: 9.5px 30px 9.5px 10px
+.arrow_toDown
+    width: 16px
+    height: 35px
+    margin-top: 7px
+    line-height: 16px
+    text-align: center
+    position: relative
+    z-index: 1
+    margin-left: -26px
+
+.profile
+    .col-lg-9 h3:first-child
+        margin-top: 0px
+    .check__radio
+        margin: 15px 0 15px 10%
+    .check__adress-shop
+        margin-top: -11px
+    .check__adress-shop a
+        margin-left: 10%
+    .check__sbm
+        margin-left: 10%
+
+
+
+
+
+
+
+
+// orders file !-------------------------------------
+.orders__title
+    @include titleText
+    margin: 65px 0 50px
+    text-transform: none
+.orders
+    background: #fff
+    padding-bottom: 100px
+    position: relative
+    .col-lg-9
+        .orders__item:last-child
+            border-bottom: 1px solid $dGreen
+.orders__header
+    margin-left: 60px
+    background: #F2F4F3
+    padding: 10px 20px
+    grid-template-columns: 20% 20% 20%
+    grid-column-gap: 60px
+.head__item
+    h4
+        font-size: 13px
+        line-height: 20px
+        color: $dym
+        text-transform: uppercase
+        font-weight: 600
+.orders__item
+    font-size: 14px
+    line-height: 18px
+    color: $dark
+    padding: 20px
+    margin-left: 60px
+    border-bottom: 1px solid $wDark
+    .d-grid
+        grid-template-columns: 20% 20% 20% auto
+        grid-column-gap: 60px
+.orders__moreBtn
+    .svg-container
+        width: 16px
+        height: 16px
+    a
+        text-decoration: underline
+        font-size: 14px
+        line-height: 18px
+    .open
+        color: $dGreen
+        path
+            stroke: $dGreen
+    .close
+        color: $dym
+        .svg-container
+            transform: rotate(180deg)
+            margin-top: 5px
+        path
+            stroke: $dym
+.orders__more
+    margin: 30px 0 20px 5%
+    line-height: 18px;
+    font-size: 13px
+    color: $dark    
+    .picture
+        width: 80px
+        height: 60px
+        img
+            height: 100%
+            width: auto
+    .name
+        font-size: 14px
+        &:hover
+            cursor: pointer
+            h4
+                color: $dGreen
+    .desc .d-flex div
+        margin-right: 10px
+    .desc
+        p
+            color: $dym
+        span
+            color: $dark
+    .all
+        font-size: 14px
+.orders__all
+    width: 100%
+    margin-top: 20px
+    p
+        font-size: 18px
+        line-height: 24px
+        color: $dark
+        text-align: right
+        span
+            font-size: 24px
+            font-weight: 600
+
+
+
+
+
+
+
+// favorite file !-----------------------------------------
+.fav
+    background: #fff
+    position: relative
+    padding-bottom: 100px
+    .filter_right, .filter_right .filter__content
+        margin-top: 0px
+    .product__favorite
+        display: none !important
+    .noHave__product
+        @include bigText
+        text-transform: none
+        width: 100%
+        text-align: center
+.fav__title
+    @include titleText
+    margin: 65px 0 50px
+    text-transform: none
+.fav
+    .product__close
+        position: absolute
+        width: 24px
+        height: 24px
+        top: 20px
+        right: 20px
+        &:hover
+            cursor: pointer
+        img
+            width: 24px
+            height: 24px
+
+
+
+
+
+
+
+// template file !------------------------------
+.template
+    background: #fff
+    padding-bottom: 100px
+    position: relative
+    
+.template__redact
+    margin-top: 65px
+    font-size: 16px
+    line-height: 28px
+    color: $dark
+    h1
+        @include titleText
+        margin-bottom: 50px
+    img
+        width: 100%
+        height: auto
+        margin: 50px 0
+    p
+        margin: 10px 0
+    h2,h3,h4
+        font-size: 24px
+        line-height: 32px
+        text-align: center
+        margin: 15px 0
+    ul, ul li 
+        list-style-type: disc  
+    ul li
+        color: $dGreen  
+    ul li span 
+        color: $dark
+    ul
+        margin: 15px
+    ol, ol li
+        list-style-type: none
+    ol 
+        margin: 15px 0
+        li
+            counter-increment: step-counter;
+        li:before
+            content: counter(step-counter)
+            color: #fff
+            padding: 2px 7px
+            border-radius: 50%
+            background-color: $dGreen
+            margin-right: 10px
+    iframe
+        width: 100%
+        height: 450px
+        margin: 50px 0
+    blockquote
+        margin: 20px 0 
+        p
+            font-style: italic
+            padding: 0
+            border-left: 3px solid $dGreen
+            padding-left: 20px
+
+
+
+
+
+
+
+@media(max-width: 1200px)
+    #promo .d-flex
+        display: block !important
+        text-align: center
+    .check_cart .promo .promo__field
+        width: 100%
+        line-height: 25px
+    .check_cart .promo .promo__sbm
+        margin-top: 20px
+
+
+
+
+
+
+
+
+        
+@media (max-width: 1100px) 
+    .curt__continue
+        margin-top: 20px
+    .show_fullDesk
+        display: none
+    .show_smallDesk
+        display: block
+    .product:hover
+        outline: 0
+        background-color: #fff
+        z-index: 1
+        -webkit-box-shadow: none
+        box-shadow: none
+        .product__desc,.product__favorite,.product__discount,.product__name
+            display: none
+        .product__top
+            display: block
+        .hidden
+            display: none
+    .company .slick__nav
+        top: 90%;
+    .slick__nav 
+        width: 95%
+        margin-left: 1%
+    .best .slick__nav
+        top: 23px
+    .company
+        .slick__nav
+            width: 60%;
+            margin-left: 20%;
+    .main__tel
+        width: max-content
+    .news__conent-title
+        padding: 0
+    .menu__block
+        margin-left: 0px
+        left: 0
+    .slider 
+        background-size: auto 100%
+    .main__DD-item
+        padding: 11px 20px
+    .complex__block
+        background-position: center !important
+        background-size: auto 100% !important
+
+
+
+    // blog file
+    .blog__card
+        grid-template-columns: repeat(2, 1fr)
+    .card
+        margin: 0 auto
+
+
+
+    // curt MODAL !---------------------------------
+    .curt__btns
+        grid-template-columns: 1fr !important
+
+    .prod .callback .content .desc__info-name
+        width: 50%
+    .modal__buy
+        width: 40%
+
+    .prod .slick-dots li
+        margin-right: 80px
+    .check__line input
+        width: 61.5%
+
+    // checkout !----------------------------------------------------
+    
+
+
+
+
+
+@media (max-width: 900px)
+    .modal__buy
+        width: 60%
+    .main__icons
+        margin-left: 10px
+    .main__dropDown
+        // margin-top: 22px
+    .main__logo
+        img
+            // margin-top: 22px
+    .showDesk
+        display: none !important
+    .showMob
+        display: block !important
+
+    .best__recomend
+        grid-template-columns: 1fr
+    .best__block
+        margin-bottom: 25px
+        margin-right: 0px
+    .complex__list
+        grid-template-columns: 1fr 
+        width: 48%
+        margin: 0 auto
+    .complex__first,.complex__second
+        margin-bottom: 50px
+    .complex__desc .complex__list
+        margin-left: 20px
+    .subscribe__text
+        margin-bottom: 30px
+    .menu__block
+        grid-template-columns: repeat(3, 1fr)
+        grid-row-gap: 30px
+    .menu__item
+        font-size: 14px
+    .main__contact
+        // display: block !important
+    .main__icons
+        margin-top: 10px
+        div:first-child
+            margin-left: 0px
+    .main__links
+        margin-right: 0px
+    .footer__menu
+        margin-top: 30px
+        margin-bottom: 30px
+    .slider
+        background-position: top 0% left 62%
+    .news__first .news__pict:hover, .news__second .news__pict:hover
+        background-size: auto 100% !important
+
+    .check__line input
+        width: 58.5%
+
+
+
+    // orders file !-----------------------------------
+    .orders__header, .orders__item
+        margin-left: 0px
+        grid-template-columns: 1fr 1fr 1fr
+    .orders__item .d-grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-row-gap: 30px
+        grid-column-gap: 35px
+    
+
+
+
+
+
+    //fav file !----------------------------
+    .fav .filter__content
+        grid-template-columns: 1fr 1fr
+    .fav
+        padding-bottom: 50px
+
+
+
+
+
+    // contacts FILE ---------------------- ! 
+    .contact__blocks
+        grid-template-columns: 1fr 1fr
+        grid-row-gap: 30px
+    .contact__form
+        margin-top: 50px
+
+
+
+
+
+
+
+    // reg file ! ---------------------------------
+    .reg__flex
+        display: block
+    .reg__form
+        width: 100%
+    .reg__pict
+        margin-top: 50px
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+
+
+
+    // login file !===============================
+    .login
+        .reg__form
+            padding-left: 30px
+            padding-right: 30px
+        .reg__pict
+            width: 100%
+        .form__login
+            display: block !important
+            p
+                margin-bottom: 5px
+
+
+
+
+    // forgot file  !-----------------------------------
+    .forgot
+        padding-bottom: 100px
+
+
+
+    // ! catalgot file ------------------------------------------
+    .cat__vitamins
+        grid-template-columns: 1fr 1.4fr
+        height: auto
+    .cat__adds 
+        height: auto
+        grid-template-columns: 1fr 1.2fr 1.3fr
+    .cat__superfood 
+        grid-template-columns: 1fr 1.1fr
+    .cat__etc 
+        height: auto
+        grid-template-columns: 1fr 1.4fr
+
+
+
+
+
+    // new category file !_--------------------------------------
+    .catP__content
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: none
+
+
+
+
+    // category file !----------------------------------------
+    .filter_right .filter__content
+        grid-template-columns: repeat(2, 1fr)
+    .filter
+        border-right: none
+
+
+
+
+    // prod file !---------------------------------------
+    .prod
+        .location .d-flex
+            flex-wrap: wrap
+        .prod__product 
+            height: auto
+            width: 100%
+        .slick-dots li
+            margin-right: 25px
+        .prod__title
+            line-height: 35px
+    .prod .callback .content .rate
+        margin-left: 0px
+    .prod .timer
+        margin-top: 70px
+
+
+    // filter file !----------------
+    .filter_right .filter__content
+        margin-top: 30px
+
+
+
+
+    // curt MODAL !-------------------------------------------
+    .modal__curt
+        width: 100%
+        height: 100vh
+
+
+
+
+
+    // checkout page !-------------------------------------------
+    .check__sbm
+        margin-bottom: 50px
+    .check__line input[name=city], .check__line input[name=otdel]
+        margin-left: 53px
+        width: 84%
+
+
+
+
+    //! profile file -=-----------------------------------------
+    .profile__menu
+        border: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px)
+    .deletespace
+        padding-right: 15px
+        padding-left: 15px
+    .main__icons
+        margin-left: 0px
+    .section_margin 
+        margin-top: 40px
+    .hideTel
+        display: none !important
+    // main menu mobile
+    .tel__menu
+        position: fixed
+        width: 100%
+        height: 100vh
+        z-index: 1003
+        .left__menu
+            padding-top: 15px
+            width: 83%
+            background: #fff
+            height: 100%
+        .close__menu
+            position: fixed
+            top: 0
+            right: 0
+            width: 17%
+            height: 60px
+            background: $dark
+            .svg_container
+                width: 36px
+                height: 36px
+                margin: auto
+                margin-top: 12px
+        .main__search
+            width: 90%
+            height: 40px
+            margin: 0 auto
+        .nav__block li:first-child
+            margin-top: 25px
+        .nav__block li:last-child
+            margin-right: auto
+            margin-bottom: 25px
+        .nav__item
+            width: 90%
+            margin: 15px auto 0 auto
+        .main__links, .nav__account
+                width: 90%
+                margin: 0 auto
+    .best__recomend
+        margin-bottom: 30px
+    .showtel
+        display: block
+    .header__nav
+        display: none
+    .nav__item
+        margin-right: 15px
+        width: max-content
+    .news__content
+        grid-template-columns: 1fr
+    .news__item 
+        margin-bottom: 30px
+    .news__line
+        margin: 50px 0
+    .slider__title
+        padding-top: 100px
+        font-size: 36px;
+        line-height: 46px;
+    .main__icons div, .main__fav img, .main__cart img
+        width: 30px
+        height: 30px
+    .shop__quant
+        top: -2px
+        right: -7px
+    .main__logo img
+        margin-top: 8px
+        height: 35px
+    .main__burger
+        margin-top: 12px
+        width: 24px      
+        height: 26px
+        img
+            width: 24px
+            height: 26px
+    .main__block .col-lg-5
+        display: none !important
+    .complex__list
+        width: auto
+    .complex__block
+        background-size: 100% auto !important;
+    .footer__info
+        margin-left: 0
+    .footer__bleecker 
+        color: #fff
+    .menu__block
+        grid-template-columns: 1fr
+        .menu__list
+            padding-left: 0%
+    .menu__item
+        display: none !important
+    .header__menu
+        ul li:first-child
+            width: 100%
+            display: flex !important
+            justify-content: center
+    .best__block 
+        .d-flex
+            width: 100%
+    .slider
+        height: 500px
+    .slider__more-link
+        width: 100%
+        text-align: center
+    .slider__nav
+        width: max-content
+        margin-left: auto
+        margin-right: auto
+        margin-top: 50px
+    .best__block
+        margin: 0 20px 20px
+        p
+            margin-left: 10px
+    .best__title 
+        font-size: 22px
+    .complex__desc
+        display: none
+    .complex__first, .complex__second
+        margin-bottom: 0px
+    .complex__block
+        height: 150px
+    .complex__greenBack
+        top: 45%
+        height: 10px
+    .complex__div-text
+        padding-top: 10%
+        p:first-child
+            margin-bottom: 10px
+    .complex
+        padding-bottom: 50px
+    .subscribe__form
+        display: block !important
+    .subscribe__field
+        width: 100%
+        font-size: 14px
+    .subscribe__sbm
+        width: 100%
+        margin-top: 20px
+    .subscribe
+        padding-bottom: 40px
+    .company__item
+        margin-right: 30px
+    .slick-track
+        width: max-content
+    .news__desc
+        padding: 0
+    .footer__menu
+        grid-template-columns: 1fr
+    .footer
+        padding-top: 0px
+    .footer__menu
+        margin: 0px
+    .footer__subtitle 
+        margin-top: 25px
+        margin-bottom: 15px
+    .footer__contacts
+        margin-top: 50px
+        margin-bottom: 50px
+    .footer__adress
+            line-height: 30px
+            font-size: 14px
+            color: #cbcbcb
+    .footer__bleecker
+        margin-top: 30px
+    .product
+        padding: 12px 8px
+    .product__img
+        width: 100%
+        .pict
+            width: 100%
+            height: 120px
+        img
+            width: auto
+            height: 100%
+    .product__title
+        min-height: 74px
+        font-size: 12px
+        padding: 26px 0px 8px
+    .product__buy
+        display: block !important
+    .product__btn button
+        margin-top: 15px
+        padding: 5px 20px
+    .best, .prod
+        .slick-dots
+            display: block
+            li button
+                background-image: none
+                width: 10px
+                height: 10px
+                background-color: $dark
+                border-radius: 50%
+                margin-right: 16px
+                &:hover
+                    cursor: pointer
+                    color: $dGreen
+        .slick-active
+            button
+                background: $dGreen !important
+
+    .rate-displ .rate .svg-container
+        margin-top: -6px
+    .prod
+        .timer
+            margin-top: 70px
+        .slick-dots
+            li
+                margin-right: 0px
+        .price
+            margin-top: 30px
+        .desc__info
+            justify-content: space-between
+        .have__callback .rate
+            margin-left: 0px !important
+        .callback .conent__show
+            width: 100%
+            font-weight: 600
+            line-height: 32px
+        .half_line
+            width: 75%
+        .prod__description
+            margin-left: 0px
+            margin-right: 0px
+            width: 100%
+    .company .slick-initialized .slick-slide
+        margin-left: 0px
+        margin-right: 0px !important
+    .buy__sbm_sec
+        line-height: 32px
+        width: 100%
+        font-size: 12px
+        text-transform: uppercase
+        background: #fff
+        border: 1px solid rgba(0,0,0,0.1)
+        margin-top: 20px
+        letter-spacing: 0.05em
+
+
+
+
+
+    //product file !-----------------------------
+    .prod .prod__title
+        font-size: 20px
+        line-height: 24px
+        margin-top: 50px
+        margin-bottom: 10px
+    .prod__name
+        font-size: 20px
+    .prod .desc, .prod .callback
+        margin-top: 50px
+    .prod .callback_nohave .edit
+        margin-top: 40px
+    .prod .callback_nohave .edit__text
+        width: 100%
+        margin-bottom: 30px        
+
+
+
+
+    // contacts FILE ---------------------- ! 
+    .contact__blocks
+        grid-template-columns: 1fr
+
+
+    // reg file !-----------------------------
+    .reg__pict
+        width: 100%
+        background-position: center center
+
+
+    // forgot file !-----------------------------
+    .forgot__win
+        padding-left: 30px
+        padding-right: 30px
+
+
+
+
+
+    //success page !--------------------------------------
+    .success__desc
+        width: 100%
+    .success
+        padding-bottom: 100px
+    .success__title
+        font-size: 24px
+
+
+
+    // 404 file error !-----------------------------------
+    .error
+        background-color: #fff
+        background-image: none
+    .vitamins
+        padding-bottom: 100px
+        background-image: none
+    .error__title
+        font-size: 150px
+        line-height: 150px
+
+
+
+
+
+    // contacts file !----------------------------
+    .modal__curt
+        table
+            margin-top: 30px
+
+
+
+
+
+
+    // blog file
+    .blog__card
+        grid-template-columns: 1fr
+    .blog_full__content img
+        height: auto
+    .blog_full__title
+        margin-top: 100px    
+
+
+
+
+
+    // catalog file !-----------------------------------
+    .cat__superfood,.cat__vitamins,.cat__adds,.cat__etc
+        grid-template-columns: 1fr
+    .cat__list div
+        padding-left: 15px !important
+    .cat__list .d-grid
+        grid-column-gap: 30px
+    .cat__superfood div:first-child ul
+        grid-column-gap: 0px
+
+    // category file !------------------------------------------
+    .category__more
+        megin-top: 20px
+        font-size: 12px
+    .category__desc
+        width: 100%
+
+
+    // new category file !_--------------------------------------
+    .catP__content
+        grid-template-columns: 1fr
+    .catP__fifth
+        grid-column-start: 1 
+        grid-column-end: 1 
+    .sort__head
+        color: $dGreen
+        font-size: 16px
+        height: 40px
+        padding: 0 40px
+        font-weight: 600
+        background: $wDark
+        text-align: center
+        line-height: 40px
+    .filter_right .filter__sort
+        margin-top: 20px
+        float: none
+        justify-content: space-between
+    .filter_right .filter__title
+        text-align: center
+    .filter_right .filter__sort .sort__container
+        height: 40px
+        padding: 11px 10px
+        font-size: 16px
+    .category__more
+        margin: 20px auto 30px auto
+    .filter_right
+        padding-left: 15px
+    .filter_right .product .block
+        height: 360px
+    .filtr__telephone
+        background-color: #fff
+        position: fixed
+        top: 0
+        right: 0
+        width: 90%
+        height: 100vh
+        z-index: 1005
+        .filter
+            width: 100%
+            height: 100%
+            margin-top: 0px
+            overflow: scroll
+        .filter__tel-title
+            width: 100%
+            font-weight: 600
+            font-size: 16px
+            margin: 15px 0px 15px 50px
+            color: $dark
+        .filer__back
+            font-size: 14px
+            color: $dym
+            margin: 18px 0 0 20px
+            .svg_container
+                margin-top: -3px
+        .filter__line, .filter__price, .filter__form
+            width: 90%
+            margin-left: 5%
+        .filter__btns
+            margin-top: 15px
+            justify-content: space-between
+            padding-left: 5%
+            padding-right: 5%
+            width: 100%
+            padding-bottom: 40px
+            -webkit-box-shadow: 0 -1px 20px -8px rgba(0,0,0,.75)
+            -moz-box-shadow: 0 -1px 20px -8px rgba(0,0,0,.75)
+            box-shadow: 0 -1px 20px -8px rgba(0,0,0,.75)
+        input[name='select']
+            @include button
+            font-size: 12px
+        .form__reset
+            width: 40%
+            padding: 5px 7px
+    
+
+
+
+
+
+
+
+
+    // CURT MODAL !---------------------.modal__buy---------------
+    .curt__products .picture
+        width: 100px
+    .curt__products .picture img
+        height: auto
+        width: 100%
+
+
+
+
+    // checkout file !---------------------------------------
+    .check__line
+        display: block !important
+        p
+            margin-left: 0
+            width: 100%
+        input, input[name="otdel"],input[name="city"]
+            margin-left: 0px
+            width: 100%
+        input[type='tel']
+            width: max-content
+    .check__radio, .check__call, .check__adress-shop a, .check__sbm
+        margin-left: 0px
+
+    .modal__title
+        font-size: 18px
+        margin-top: 40px
+    .modal__text 
+        font-size: 14px
+    .modal__close 
+        top: 10px
+        right: 10px
+    .modal
+        width: 90%
+        hight: 170px
+    .modal__buy 
+        width: 90%
+        height: 335px
+        form .d-flex
+            display: block !important
+            width: 100%
+        .modal__sbm
+            width: 100%
+            margin-top: 20px
+        .modal__field
+            height: 36px
+        .buy__title
+            font-size: 20px
+
+    
+    .check__title
+        font-size: 18px
+        margin-bottom: 0px
+    .check__login
+        margin: 10px 0 10px 0
+    .check__adress-shop
+        margin-left: 27px
+        width: 70%
+    .check__line 
+        .promo__quest
+            margin-top: 20px
+        .promo__sbm
+            @include button
+            padding: 10px 20px
+            border-radius: 3px
+            margin-top: 10px
+    .promo__error
+        h6
+            color: #fe3e6c
+            margin-top: 10px
+            line-height: 16px
+            font-size: 13px
+        p
+            color: $dym
+            margin: 5px 0
+            span
+                color: $dark
+    .promo__success
+        h6
+            font-size: 13px
+            color: #31ada5
+            margin-top: 10px
+            line-height: 16px
+        p:first-child
+            margin-top: 15px
+        p
+            font-size: 14px
+            line-height: 20px
+            color: #727777
+        p:last-child
+            color: #31ada5
+    .promo__sum
+        margin-top: 20px
+        font-size: 18px
+        color: $dym
+        span
+            font-weight: 600
+            color: $dark
+            font-size: 20px
+    .check
+        padding-bottom: 30px
+
+
+    // profile file !-------------------------
+    .profile__contents
+        grid-template-columns: 80%
+
+
+    // fav file !------------------------------------
+    .fav 
+        .product .absolute__block
+            bottom: 0
+            right: 0 
+            margin: auto auto
+
+
+    // success file !-------------------------------------
+    .success__pict
+        margin-top: 25px
+    .success
+        padding-bottom: 30px
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 375px)
+    .company .slick-initialized .slick-slide
+        margin-left: 70px
+    .nav__block
+        li:last-child
+            margin-right: 0px
+
+
+
+
+    // CURT MODAL !-------------------------------
+    .modal__curt
+        table
+            margin-left: -100px
+
+
+    // checkout file !----------------------------------
+    .promo__send
+        .promo__field
+            width: 100%
+
+
+
+
+@media (max-width: 350px)
+    .product__title
+        min-height: 94px
